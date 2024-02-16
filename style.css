@@ -5,11 +5,19 @@
     --text1:hsl(0, 0%, 90%);
     --text2:hsl(0, 0%, 100%);
     --invalid:hsl(7, 76%, 39%);
+    --fs-18: 1.125rem;
+    --fs-24: 1.5;
+    --fs-32: 2rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+    --fs-72: 4.5rem;
+    --fs-88: 5.5rem;
+    --container: 69.375rem
 }
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 100%;
     
 }
 
@@ -22,14 +30,19 @@ body {
     font-family: "Space Grotesk", sans-serif;
     background-color: var(--bg-body);
     color: var(--text1);
-    font-size: 1.8rem;
+    font-size: var(--fs-18);
     line-height: 1.56;
 }
 
-.btn {
-    background-color: transparent;
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
 }
 
-#links {
-    
+/* 600px */
+@media (min-width: 37.5em){ 
+    .wrapper {
+        width: calc(100% - 3.75rem)
+    }
 }
