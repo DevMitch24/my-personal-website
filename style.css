@@ -1,0 +1,35 @@
+:root {
+    --bg-body:hsl(0, 0%, 8%);
+    --bg-contact:hsl(221, 51%, 16%);
+    --accent:hsl(37, 98%, 53%);
+    --text1:hsl(0, 0%, 90%);
+    --text2:hsl(0, 0%, 100%);
+    --invalid:hsl(7, 76%, 39%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-size: 1.8rem;
+    line-height: 1.56;
+}
+
+.btn {
+    background-color: transparent;
+}
+
+#links {
+    
+}
