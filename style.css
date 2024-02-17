@@ -1,9 +1,9 @@
 :root {
-  --bg-body: hsl(0, 0%, 8%);
-  --bg-contact: hsl(221, 51%, 16%);
+  --bg-body: hsl(0, 0%, 12%);
+  --bg-contact: hsl(219, 19%, 20%);
   --accent: hsl(37, 98%, 53%);
-  --text1: hsl(0, 0%, 90%);
-  --text2: hsl(0, 0%, 100%);
+  --text1: hsl(0, 0%, 100%);
+  --text2: hsl(0, 0%, 60%);
   --invalid: hsl(7, 76%, 39%);
   --fs-18: 1.125rem;
   --fs-24: 1.5;
@@ -49,12 +49,36 @@ h3 {
   line-height: 1;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    margin-bottom: 60px;
+  }
+}
+
 p {
+  font-size: 1rem;
   line-height: 1.5;
+  color: var(--text2);
 }
 
 a {
   transition: color var(--transition);
+}
+
+a.underline {
+  font-size: 1rem;
+  line-height: 1.625;
+  letter-spacing: 2.29px;
+  text-decoration: none;
+  color: var(--text1);
+  border-bottom: 2px solid var(--accent);
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -113,6 +137,7 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
+    margin-bottom: 90px;
   }
 
   .header__home {
@@ -122,10 +147,10 @@ a:hover {
 }
 
 /* HERO */
-.hero {
-}
 
 .hero__wrapper {
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--text2);
 }
 
 .hero__image {
@@ -144,17 +169,77 @@ a:hover {
   margin-top: 335px;
 }
 
+/* Tablet */
+@media (min-width: 37.5em) {
+  .hero__wrapper {
+    padding-bottom: 200px;
+  }
+
+  .hero__image {
+    height: auto;
+    width: 20.125rem;
+    left: auto;
+    right: 0;
+    translate: 0;
+  }
+
+  .hero__text {
+    text-align: left;
+    margin-top: 0;
+    max-width: 54vw;
+  }
+}
+
+/* Desktop */
+@media (min-width: 62.5em) {
+  div.hero__text h1 {
+    max-width: 45rem;
+  }
+
+  .header__nav {
+    padding-right: 30px;
+  }
+
+  .hero__wrapper {
+    position: relative;
+    padding-bottom: 280px;
+  }
+
+  .hero__image {
+    height: auto;
+    width: 24rem;
+    left: auto;
+    right: 0;
+    translate: 0 -160px;
+  }
+
+  .hero__text {
+    text-align: left;
+    margin-top: 0;
+    max-width: 54vw;
+  }
+}
+
 h1 > span {
   border-bottom: 2px solid var(--accent);
-}
-
-.hero__headline {
-}
-
-.hero__description {
+  white-space: nowrap;
 }
 
 .hero__contact {
   text-decoration: underline;
   color: var(--text1);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--bg-contact);
+  border-top: 2px solid var(--text2);
+  margin-top: 2rem;
+  padding-bottom: 10px;
+}
+
+p.credit {
+  font-size: 10px;
+  text-align: center;
 }
