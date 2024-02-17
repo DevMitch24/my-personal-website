@@ -36,6 +36,23 @@ body {
   line-height: 1.56;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+p {
+  line-height: 1.5;
+}
+
 a {
   transition: color var(--transition);
 }
@@ -102,4 +119,42 @@ a:hover {
     flex: 1;
     margin-inline-end: auto;
   }
+}
+
+/* HERO */
+.hero {
+}
+
+.hero__wrapper {
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  z-index: -1;
+  opacity: 60%;
+  display: block;
+}
+
+.hero__text {
+  position: relative;
+  text-align: center;
+  margin-top: 335px;
+}
+
+h1 > span {
+  border-bottom: 2px solid var(--accent);
+}
+
+.hero__headline {
+}
+
+.hero__description {
+}
+
+.hero__contact {
+  text-decoration: underline;
+  color: var(--text1);
 }
