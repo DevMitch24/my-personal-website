@@ -328,6 +328,15 @@ h1 > span {
   margin-bottom: 1rem;
 }
 
+button:hover {
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+/* Desktop */
+@media (min-width: 62.5em) {
+}
+
 .align-right {
   display: flex;
   justify-content: flex-end;
