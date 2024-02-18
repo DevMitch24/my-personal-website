@@ -230,6 +230,34 @@ h1 > span {
   color: var(--text1);
 }
 
+/* SKILLS */
+
+.skills {
+  text-align: center;
+}
+
+.skills__title {
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Tablet*/
+@media (min-width: 37.5em) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 62.5em) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* PROJECTS */
+
 /* FOOTER */
 
 .footer {
