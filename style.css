@@ -257,6 +257,29 @@ h1 > span {
 }
 
 /* PROJECTS */
+.projects {
+  display: grid;
+}
+
+.projects__contact {
+  text-align: end;
+  padding-right: 30px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects__item {
+  grid-column: 1 / span 2;
+  margin-bottom: 30px;
+}
+
+.projects__links a {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
 
 /* FOOTER */
 
